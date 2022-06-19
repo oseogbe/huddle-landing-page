@@ -1,1 +1,1 @@
-Landing page design for Huddle.
+Responsive landing page design for Huddle.
