@@ -1,1 +1,1 @@
-Responsive landing page design for Huddle.
+Welcome to the Official github repository of Huddle.
