@@ -49,6 +49,13 @@ nav > button {
     background: #FFFFFF;
     padding: 8px 28px;
     color: #05252D;
+    animation: swipe-left 1s ease-in;
+    animation-fill-mode: backwards;
+}
+
+@keyframes swipe-left {
+    from {margin-right: -100px}
+    to {margin-right: 0px}
 }
 
 header > .container {
@@ -58,6 +65,26 @@ header > .container {
     margin: auto;
     padding-top: 2.5rem;
     text-align: center;
+}
+
+header > .container > div > button {
+    animation: swipe-right 1s ease-out 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes swipe-right {
+    from {margin-left: -400px}
+    to {margin-left: 0px}
+}
+
+header > .container > img {
+    animation: fall-down 2s ease-in-out 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fall-down {
+    from {margin-top: -700px}
+    to {margin-top: 0px}
 }
 
 header h1 {
