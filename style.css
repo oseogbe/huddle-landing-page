@@ -285,17 +285,22 @@ footer .content div:nth-child(4) {
     }
 
     main .card {
-        flex-direction: row-reverse;
-        grid-template-columns: 48% 35%;
-        gap: 17%;
-        padding: 3rem 2rem 3rem 7rem;
+        display: grid;
+        grid-template-areas: 'text img';
+        grid-template-columns: 44% 41%;
+        gap: 15%;
+        padding: 3rem 2rem 3rem 7rem; 
         margin-bottom: 2rem;
         text-align: left;
         align-items: center;
     }
 
     main .card:nth-child(2) {
-        flex-direction: row;
+        grid-template-areas: 'img text';
+    }
+
+    main .card div {
+        grid-area: text;
     }
 
     main .card h3 {
@@ -308,6 +313,7 @@ footer .content div:nth-child(4) {
     }
 
     main .card img {
+        grid-area: img;
         width: 100%;
     }
 
